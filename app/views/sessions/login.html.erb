@@ -1,0 +1,13 @@
+<div>
+  <%= form_for :user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+    <%= f.submit %>
+  <% end %>
+</div>
+- or -
+<p>
+  <%= link_to "Sign up!", users_new_path %>
+<p>
